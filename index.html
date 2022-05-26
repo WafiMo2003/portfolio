@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,30 @@
     <title>Portfolio</title>
 
     <!-- Permet d'afficher des icônes, pictogrammes etc. -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-<!-- Lien CSS -->
-<link rel="stylesheet" href="CSS/style.css">
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
+
 <body>
+
+
+
+
+
+    <!--BARRES DE MENU  -->
+    <!-- Le fa-fa-bars permet l'affichage de barres de menu à partir du lien font déclaré en haut-->
+    <div id="menu-bars" class="fa fa-bars"></div>
+
+
+    <!-- SECTION HEADER -->
     <header>
+        <!-- le span permet de marquer une partie d'un texte, c'est comme un div mais dans un élément -->
         <a href="#" class="logo"> <span>Mohamed</span> Wafi</a>
 
+        <!-- Voici la barre de navigation -->
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -26,6 +41,7 @@
             <a href="#contact">Contact</a>
         </nav>
 
+        <!-- Voici les icône pour contacter à partir des réseaux sociaux -->
         <div class="network">
             <!-- Les élément fab fa-... servent à obtenir des icônes des différents réseaux sociaux -->
             <a href="#" class="fab fa-facebook-f"></a>
@@ -34,12 +50,25 @@
             <a href="#" class="fab fa-linkedin"></a>
 
         </div>
-       
-
-
-
     </header>
-    
+
+    <!-- SECTION Home -->
+  
+    <section class="home" id="home">
+        <div class="content">
+    <span class="hi"> Hi there</span>
+    <h3>I am <span>Mohamed Wafi</span></h3>
+
+    <p class="info"> I am a programmer</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quas dignissimos porro corporis, reprehenderit animi rerum incidunt id facere culpa cupiditate ab iusto, totam ea illo tempore quidem magnam voluptatem?</p>
+     <a href="#about" class="btn">About me</a>
+
+    </div>
+
+    <div class="image">
+        <img src="Images/aboutMee.jpg" alt="">
+    </div>
+    </section>
 
 
 
@@ -50,7 +79,8 @@
 
 
 
-    <!-- Script javascript -->
-    <script src="JS/index.jss"></script>
+    <!-- Script javascript, va s'exécuter sur les éléments de la page web -->
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
