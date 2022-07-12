@@ -4,7 +4,7 @@
 /*Correspond à la racine  */
 :root {
     /* Main color va être une variable que l'on va utiliser tout au long du CSS */
-    --main-color: #4169e4;
+    --main-color: #143FAD
 }
 
 
@@ -40,10 +40,10 @@ section {
     min-height: 100vh;
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 3rem; 
+    padding: 0.5rem 3rem;
     background: var(--main-color);
     color: #fff;
     cursor: pointer;
@@ -51,7 +51,7 @@ section {
 
 }
 
-.btn:hover{
+.btn:hover {
     background: #111;
     letter-spacing: .2rem;
 }
@@ -142,18 +142,26 @@ header .network a:hover {
 
 .home .image {
     flex: 1 1 40rem;
+
 }
 
 .home .image img {
-    width: 100%
+    width: 85%;
+
 }
+
+.home .content {
+    flex: 1 1 40rem;
+}
+
+
 
 .home .content .hi {
     font-size: 2rem;
     color: var(--main-color);
 }
 
-.home .content .h3 {
+.home .content h3 {
     font-size: 4.5rem;
     color: #111;
     text-transform: uppercase;
@@ -163,17 +171,160 @@ header .network a:hover {
     color: var(--main-color);
     text-transform: uppercase;
 }
-.home .content .info{
+
+.home .content .info {
     font-size: 2.5rem;
     color: #111;
-    padding: 5rem 0;
+
 }
 
-.home .content .text{
-    font-size: 2.5rem;
+.home .content .text {
+    font-size: 1.7rem;
     color: #666;
     padding: 5rem 0;
 }
+
+/* ABOUT CSS */
+
+.heading {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.about .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.about .row-1 .image {
+    flex: 1 1 25rem;
+
+}
+
+.about .row-1 .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+}
+
+
+.about .row-1 .content {
+    flex: 1 1 50rem;
+
+}
+
+.about .row-1 .content h3 {
+    color: #333;
+    font-size: 3.5rem;
+}
+
+.about .row-1 .content p {
+    color: #666;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+}
+
+.about .row-1 .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: .5rem 0;
+
+}
+
+.about .row-1 .content .box-container .box {
+    flex: 1 1 20rem;
+
+}
+
+.about .row-1 .content .box-container .box span {
+    flex: 1 1 20rem;
+    color: var(--main-color);
+}
+
+.about .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row-2 .skills .progress h3 {
+    justify-content: space-between;
+    font-size: 1.7rem;
+    display: flex;
+    padding: 1rem 0;
+    color: #111;
+    font-weight: 400;
+} 
+.about .row-2 .skills {
+    flex: 1 1 40rem;
+}
+ 
+
+.about .row-2 .skills .progress {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 400;
+
+}
+
+.about .row-2 .box-container {
+    flex: 1 1 40rem;
+}
+
+.about .row-2 .skills .progress .bar {
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+    
+
+}
+
+.about .row-2 .skills .progress .bar span {
+
+    display: block;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 50rem;
+}
+
+
+.about .row-2 .skills .progress:nth-child(1) .bar span {
+    width: 95%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span {
+    width: 80%;
+}
+.about .row-2 .skills .progress:nth-child(3) .bar span {
+    width: 75%;
+}
+
+.about .row-2 .skills .progress:nth-child(4) .bar span {
+    width: 85%;
+}
+
+
+
+
 
 /* Requêtes media */
 /* Une requête media sert à adapter le site en fonction de l'appareil utilisé pour
